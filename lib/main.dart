@@ -260,8 +260,8 @@ class Meeting {
 
   Map<String, dynamic> toJson() => {
     'eventName': eventName.toString(),
-    'from': from.toString(),
-    'to': to.toString(),
+    'from': from.millisecondsSinceEpoch.toString(),
+    'to': to.millisecondsSinceEpoch.toString(),
     'background': background.toString(),
     'isAllDay': isAllDay.toString(),
     'description': description.toString(),
